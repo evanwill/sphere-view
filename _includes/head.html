@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
+<meta name="description" content="{{ site.description | escape }}">
+<meta name="keywords" content="{{ site.keywords | escape }}">
+<meta name="author" content="{{ site.author }}">
+
+<meta property="og:title" content="{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}" />
+<meta property="og:description" content="{{ site.description }}" />
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta property="og:url" content="{{ page.url | absolute_url }}" />
+<meta property="og:locale" content="en_US" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","headline":"{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}","author":{"@type":"Person","name":"{{ site.author }}"},"description":"{{ site.description }}","url":"{{ page.url | absolute_url }}"}</script>
+
+<link rel="stylesheet" href="https://cdn.pannellum.org/2.4/pannellum.css">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | absolute_url }}">
+
+<style>
+    #panorama {
+        width: 100%;
+        height: 400px;
+    }
+</style>
