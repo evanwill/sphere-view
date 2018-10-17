@@ -1,7 +1,6 @@
 ---
-title: test
+title: sphere
 layout: default
 sphere: painting1_sm.jpg
 ---
 
-<div id="panorama"></div>
