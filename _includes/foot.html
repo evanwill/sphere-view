@@ -1,9 +1,11 @@
+{% if page.sphere %}
 <!-- https://pannellum.org/documentation/reference/ -->
 <script src="https://cdn.pannellum.org/2.4/pannellum.js"></script>
 <script>
 pannellum.viewer('panorama', {
     "type": "equirectangular",
-    "panorama": "images/{{ page.img }}",
+    "panorama": "images/{{ page.sphere }}",
     "autoLoad": true
 });
 </script>
+{%- endif -%}
