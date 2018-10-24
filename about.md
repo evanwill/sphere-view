@@ -7,16 +7,17 @@ nav: true
 # sphere-view
 
 `sphere-view` uses [Pannellum](https://pannellum.org/) photosphere viewer, in a minimal Jekyll template on GitHub Pages.
+Pannellum viewer supports images up to 4096px wide on mobile browsers, or a max of 8192 px wide on desktop.
 
 ## Photospheres
 
 I like to incorrectly use photo features to see what interesting stuff happens.
 
-Photosphere's are just regular flat JPG images, but the recorded image is a projection (probably "equirectangular")--just like a map is a flat representation of a globe.
+Photospheres are just regular flat JPG images, but the recorded image is a projection (probably "equirectangular")--just like a map is a flat representation of a globe.
 Photosphere viewers know how to display the image to correctly unwarp the projection to make it appear like a 360 degree view. 
 The viewer relies on some embedded metadata to tell it that the JPG could be viewed in this way.
 
-The upshot: if we add the correct metadata to any random image, we can trick viewers into displaying the image in 360, with odd and fascinating results.
+*The upshot:* if we add the correct metadata to any random image, we can trick viewers into displaying the image in 360, with odd and fascinating results.
 
 As far as I can tell, most viewers require four XMP tags in the GPano namespace (it is similar on other platforms), which in xml would look like:
 
@@ -26,6 +27,8 @@ As far as I can tell, most viewers require four XMP tags in the GPano namespace 
 <GPano:ProjectionType>equirectangular</GPano:ProjectionType>
 <GPano:UsePanoramaViewer>True</GPano:UsePanoramaViewer>
 ```
+
+> Hint: if you use Pannellum as in `sphere-view` no metadata tags are required, you will only have to do this if you are trying to trick Flickr, Facebook, etc...
 
 ## ExifTool
 
