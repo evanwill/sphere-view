@@ -9,6 +9,8 @@ nav: true
 `sphere-view` uses [Pannellum](https://pannellum.org/) photosphere viewer, in a minimal Jekyll template on GitHub Pages.
 Pannellum viewer supports images up to 4096px wide on mobile browsers, or a max of 8192 px wide on desktop.
 
+test
+
 ## Photospheres
 
 I like to incorrectly use photo features to see what interesting stuff happens.
